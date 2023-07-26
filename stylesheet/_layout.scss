@@ -1,0 +1,212 @@
+.container{
+    margin: 0 auto;
+    max-width: 1296px;
+    @include pad(){
+        max-width: 1016px;
+        padding: 0 12px;
+    }
+    @include mobile(){
+        max-width: 791px;
+    }
+}
+.d-flex{
+    display: flex;
+}
+.menu{
+    background-color: #AA0601;
+    padding: 13px 0px;
+        @include mobile(){
+            padding: 0;
+        }
+    .container{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        @include mobile(){
+            padding: 0px;
+        }
+    }
+}
+.logo{
+    @include mobile(){
+        padding: 16px;
+    }
+}
+.menu h1{
+    width:80px;
+    a{  
+        width: 100%;
+        display: block;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true) no-repeat;
+        background-size: cover;
+        text-indent: 150%;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom:24px;
+    }
+    a:hover{
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+    }
+}
+.menu-item{
+    justify-content: space-between;
+    width: 41.6%;
+    @include pad(){
+        width: 75%;
+    }
+    @include mobile(){
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    li{   
+        @include mobile(){
+            width: 50%;
+            border: 1px solid #FFFFFF;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 12px 0px;
+        text-align: center;
+        display: block;
+        @include mobile(){
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 32px;
+        }
+    }
+    a:hover{
+        text-decoration: underline;
+        @include mobile(){
+            text-decoration: none;
+            background-color: #650300;
+        }
+    }
+}
+footer{
+    background-color: #AA0601;
+    padding-top:48px;
+    @include mobile(){
+        padding-top:24px;
+    }
+}
+.footer{
+    justify-content: space-between;
+}
+.footer-list{
+    width: 35.8%;
+    @include pad(){
+        width: 66.6%;
+    }
+}
+.footer-menu{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        padding: 16px 0px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+.social-media {
+    justify-content: space-between;
+    @include mobile(){
+        width: 30%;
+    }
+    a{
+        display: block;
+        margin-left: 32px;
+        border: 1px solid transparent;
+        @include pad(){
+            margin-left: 16px;
+            @include mobile(){
+                margin-left: 8px;
+            }
+        }
+    }
+    a:hover{
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+    }
+    img{
+        width: 48px;
+    }
+}
+.footer-info{
+    margin-bottom: 28px;
+    @include mobile(){
+        margin-bottom: 24px;
+    }
+}
+.footer-info li{
+    margin-bottom: 8px;
+}
+.footer-info a{
+    font-size: 36px;
+    text-decoration: none;
+    color: #FFFFFF;
+    @include mobile(){
+        font-size: 16px;
+    }
+    span{
+        margin-right: 8px;
+        font-size: 36px;
+        @include pad(){
+            font-size: 36px;
+        }
+        @include mobile(){
+            font-size: 16px;
+        }
+    }
+}
+.footer-info a:hover{
+    text-decoration: underline;
+}
+.footer-copyright{
+    justify-content: space-between;
+    padding: 32px 0px;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    @include mobile(){
+        flex-direction: column;
+        padding: 16px 0px;
+    }
+    p{
+        @include mobile(){
+            margin-bottom: 8px;
+        }
+    }
+}
+.terms{
+    justify-content: space-between;
+    font-size: 14px;
+    @include mobile(){
+        flex-direction: column;
+        font-size: 16px;
+    }
+    li{
+        margin-left: 48px;
+        @include mobile(){
+            margin-left: 0;
+            margin-bottom: 8px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
