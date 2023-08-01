@@ -152,6 +152,18 @@ footer{
 }
 .footer-info li{
     margin-bottom: 8px;
+    align-items: center;
+    span{
+        margin-right: 8px;
+        font-size: 36px;
+        color: #FFFFFF;
+        @include pad(){
+            font-size: 36px;
+        }
+        @include mobile(){
+            font-size: 16px;
+        }
+    }
 }
 .footer-info a{
     font-size: 36px;
@@ -159,16 +171,6 @@ footer{
     color: #FFFFFF;
     @include mobile(){
         font-size: 16px;
-    }
-    span{
-        margin-right: 8px;
-        font-size: 36px;
-        @include pad(){
-            font-size: 36px;
-        }
-        @include mobile(){
-            font-size: 16px;
-        }
     }
 }
 .footer-info a:hover{
