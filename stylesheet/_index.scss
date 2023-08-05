@@ -309,6 +309,7 @@ header{
         font-size: 16px;
         background-color: #FBF2F2;
         border: 1px solid #000000;
+        resize: none;
     }
     .check{
         align-items: center;
@@ -329,11 +330,11 @@ header{
     button{
         color: #ffffff;
         background-color: #AA0601;
-        width: 33%;
+        width: 64.2%;
         padding: 16px 0px;
         border: 0px;
         @include pad(){
-            width: 50%;
+            width: 51.8%;
             @include mobile(){
                 width: 100%;
             }
